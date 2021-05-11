@@ -1,12 +1,16 @@
 // STEP 1
-function Cat (breed) {};
-var Dog = function (breed) {};
+// function Cat (breed) {};
+// var Dog = function (breed) {};
 
 // STEP 2
-var persian = new Cat("Persian");
-var shibaInu = new Dog("ShibaInu");
+// var persian = new Cat("Persian");
+// var shibaInu = new Dog("ShibaInu");
 
 // STEP 3
+var Animal = function () {
+    "use strict";
+};
+window.console.log("The Animal has been created");
 
 // STEP 4
 
