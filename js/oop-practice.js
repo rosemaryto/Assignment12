@@ -49,8 +49,27 @@
 // }
 
 
-
 // STEP 7
+//ANIMAL CLASS
+var Animal = function (type) {
+    "use strict";
+    this.type = type;
+};
+//SPEAK METHOD
+Animal.prototype.speak = function() {
+    "use strict";
+    if (this.type === "Dog") {
+        return "The Black Dog is barking!";
+    } else {
+        return "The White Cat is meowing!";
+    }
+};
+//NEW ANIMAL INSTANCE
+var Dog = new Animal ("Dog");
+var Cat = new Animal ("Cat");
+//CALL METHOD
+window.console.log(Dog.speak());
+
 
 // STEP 8
 
