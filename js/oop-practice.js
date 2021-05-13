@@ -51,26 +51,66 @@
 
 // STEP 7
 //ANIMAL CLASS
-var Animal = function (type) {
-    "use strict";
-    this.type = type;
-};
+// var Animal = function (type) {
+//     "use strict";
+//     this.type = type;
+// };
 //SPEAK METHOD
-Animal.prototype.speak = function() {
-    "use strict";
-    if (this.type === "Dog") {
-        return "The Black Dog is barking!";
-    } else {
-        return "The White Cat is meowing!";
-    }
-};
+// Animal.prototype.speak = function() {
+//     "use strict";
+//     if (this.type === "Dog") {
+//         return "The Black Dog is barking!";
+//     } else {
+//         return "The White Cat is meowing!";
+//     }
+// };
 //NEW ANIMAL INSTANCE
-var Dog = new Animal ("Dog");
-var Cat = new Animal ("Cat");
+// var Dog = new Animal ("Dog");
+// var Cat = new Animal ("Cat");
 //CALL METHOD
-window.console.log(Dog.speak());
+// window.console.log(Dog.speak());
 
 
 // STEP 8
+// // ANIMAL CLASS
+// var Animal = function (type) {
+//     "use strict";
+//     this.type = type;
+    
+// };
+// //CHECKTYPE METHOD
+// Animal.prototype.checkType = function(pet){
+//     "use strict";
+//     this.pet = pet;
+//     return this;
+// };
+// // SPEAK METHOD
+// Animal.prototype.speak = function() {
+//     "use strict";
+//     if (this.pet === "dog") {
+//         return "The dog has made a noise!"
+//     } else {
+//         return "The Cat has made a noise!"
+//     }
+// };
+
+// //PET CLASS
+// var pet = function(dog) {
+//     this.dog = dog;
+// }
+// pet.prototype = new Animal();
+
+// //NEW ANIMAL INSTANCE
+// var myPet = new pet ("dog");
+
+// window.console.log(myPet.checkType(dog).speak());
 
 // STEP 9
+String.prototype.findWords = function () {
+    "use strict";
+    
+}
+var str = 'This is a paragraph paragraph paragraph.';
+    
+    var getwords = str.search("paragraph");
+window.console.log(getwords);
