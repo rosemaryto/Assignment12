@@ -72,45 +72,43 @@
 
 
 // STEP 8
-// // ANIMAL CLASS
-// var Animal = function (type) {
-//     "use strict";
-//     this.type = type;
+//ANIMAL CLASS
+var Animal = function (type,animalSpeak) {
+    var type = "Dog";
+    this.animalType = type;
+    this.animalSpeak = type + " ";
     
-// };
-// //CHECKTYPE METHOD
-// Animal.prototype.checkType = function(pet){
-//     "use strict";
-//     this.pet = pet;
-//     return this;
-// };
-// // SPEAK METHOD
+};
+// //SPEAK METHOD
 // Animal.prototype.speak = function() {
 //     "use strict";
-//     if (this.pet === "dog") {
-//         return "The dog has made a noise!"
+//     if (this.type === "Dog") {
+//         return "The Black Dog is barking!";
 //     } else {
-//         return "The Cat has made a noise!"
+//         return "The White Cat is meowing!";
 //     }
 // };
+Animal.prototype.checkType = function (Animal) {
+    if (this.animalType === "Cat") {
+        return this.animalSpeak + " has made a noise!";
+    } else {
+        return this.animalSpeak + " has made a noise!";
+    }
+}
+//NEW ANIMAL INSTANCE
+var myPet = new Animal ("Dog");
 
-// //PET CLASS
-// var pet = function(dog) {
-//     this.dog = dog;
-// }
-// pet.prototype = new Animal();
+// CALL METHOD
+window.console.log(myPet.checkType());
 
-// //NEW ANIMAL INSTANCE
-// var myPet = new pet ("dog");
 
-// window.console.log(myPet.checkType(dog).speak());
 
 // STEP 9
-String.prototype.findWords = function () {
-    "use strict";
+// String.prototype.findWords = function () {
+//     "use strict";
     
-}
-var str = 'This is a paragraph paragraph paragraph.';
+// }
+// var str = 'This is a paragraph paragraph paragraph.';
     
-    var getwords = str.search("paragraph");
-window.console.log(getwords);
+//     var getwords = str.search("paragraph");
+// window.console.log(getwords);
