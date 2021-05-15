@@ -73,30 +73,21 @@
 
 // STEP 8
 //ANIMAL CLASS
-var Animal = function (type,animalSpeak) {
-    var type = "Dog";
+var Animal = function (type, speak) {
+    var type = "Cat";
     this.animalType = type;
-    this.animalSpeak = type + " ";
+    this.speak = type + " ";
     
 };
-// //SPEAK METHOD
-// Animal.prototype.speak = function() {
-//     "use strict";
-//     if (this.type === "Dog") {
-//         return "The Black Dog is barking!";
-//     } else {
-//         return "The White Cat is meowing!";
-//     }
-// };
 Animal.prototype.checkType = function (Animal) {
     if (this.animalType === "Cat") {
-        return this.animalSpeak + " has made a noise!";
+        return this.speak + " has made a noise!";
     } else {
-        return this.animalSpeak + " has made a noise!";
+        return this;
     }
 }
 //NEW ANIMAL INSTANCE
-var myPet = new Animal ("Dog");
+var myPet = new Animal ("Cat", "Meow");
 
 // CALL METHOD
 window.console.log(myPet.checkType());
